@@ -28,4 +28,4 @@ Your task is to develop two distinct React list components, ListA and ListB, eac
 
 This challenge is an opportunity to showcase your front-end development skills. We're eager to see your approach to creating these components!
 
-Please share your repo with k3b0 on GitHub when complete.
+Please share your repo with our Lead Frontend developer Arman Ali on GitHub when complete.
