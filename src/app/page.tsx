@@ -13,7 +13,7 @@ export default async function Home() {
         <p>Check out the instructions in the README.md</p>
       </div>
       <Lists>
-        {/* <ListA /> */}
+        <ListA />
         <ListB />
       </Lists>
     </div>

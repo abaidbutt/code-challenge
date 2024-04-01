@@ -26,7 +26,7 @@ const DetailPokemon = async ({ name }: { name: string }) => {
           height={150}
         />
       </div>
-      <h1 className="font-bold text-2xl">{pokemon.name}</h1>
+      <h1 className="font-bold text-2xl capitalize">{pokemon.name}</h1>
       <div className="px-2 pt-2 pb-2 space-x-2">
         <span className="inline-block text-gray-700 bg-gray-200 text-sm py-1 rounded-full px-3">
           #character
@@ -38,7 +38,7 @@ const DetailPokemon = async ({ name }: { name: string }) => {
           #photography
         </span>
       </div>
-      <p className="px-4 text-md font-normal text-slate-700">{`${pokemon.name} Active ${pokemon.base_experience} Pokemon Character`}</p>
+      <p className="px-10 text-sm font-normal text-slate-700 line-clamp-2">{`${pokemon.name} Active ${pokemon.base_experience} Pokemon Character`}</p>
       <h1 className="font-semibold">${pokemon.weight}</h1>
       <button className="rounded-lg shadow-lg bg-black py-2 text-sm text-slate-200 px-5 cursor-pointer">
         Add to Cart

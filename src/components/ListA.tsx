@@ -9,7 +9,7 @@ const ListA = async () => {
     <div className="flex gap-4 flex-wrap">
       {pokemons.results.map((pokemon: any) => (
         <div
-          className="border border-gray-300 bg-white flex flex-col justify-center items-center gap-2 w-80 rounded-md"
+          className="border border-gray-300 bg-white flex flex-col justify-center items-center gap-2 w-80 rounded-lg"
           key={pokemon.name}
         >
           <Image
@@ -17,13 +17,15 @@ const ListA = async () => {
             alt={pokemon.name}
             width={320}
             height={220}
-
           />
-          <div className="p-2">
-            <h3 className="text-left text-xl font-bold capitalize">
+          <div className="py-4 px-4">
+            <span className="inline-block bg-red-200 text-gray-700 text-xs py-1 rounded-full px-3">
+              HIGHLIGHT
+            </span>
+            <h3 className="text-left text-xl font-bold capitalize py-1">
               {pokemon.name}
             </h3>
-            <p className="py-1">
+            <p className="py-1 text-sm line-clamp-4">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim ex
               saepe accusantium, rerum dignissimos commodi incidunt harum
               tempore sed quae quo ad, deserunt voluptate nobis ipsa libero vel
