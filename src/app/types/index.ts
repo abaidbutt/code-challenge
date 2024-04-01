@@ -1,6 +1,8 @@
 export interface Pokemon {
     id: number;
     name: string;
+    weight: number;
+    base_experience: number;
     sprites: {
         front_default: string;
         back_default: string;

@@ -1,14 +1,21 @@
-import Image from "next/image";
-import { getPokemon } from "./utils/fetchPokemon";
+import ListA from "@/components/ListA";
+import { ReactNode, useState } from "react";
+import ListB from "@/components/ListB";
+import Lists from "@/components/Lists";
 
 export default async function Home() {
-	const pokemon = await getPokemon("charizard");
-	return <div className="min-h-screen max-h-full w-full flex flex-col gap-4 items-center justify-center bg-[#FCFCFC] p-20">
-		<h1 className="text-4xl font-bold text-center">ProximaHQ Coding Challenge</h1>
-		<p>Check out the instructions in the README.md</p>
-		<div className="border border-gray-300 bg-white flex flex-col justify-center items-center gap-2 h-40 w-40 rounded-md">
-			<h3 className="text-center text-xl font-bold capitalize">{pokemon.name}</h3>
-			<Image src={pokemon.sprites.front_default} alt={pokemon.name} width={96} height={96} />
-		</div>
-	</div>
+  return (
+    <div className="min-h-screen max-h-full w-full flex flex-col gap-4 items-center justify-center bg-[#FCFCFC] p-10">
+      <h1 className="text-4xl font-bold text-center">
+        ProximaHQ Coding Challenge
+      </h1>
+      <div className="flex gap-2 justify-between items-center">
+        <p>Check out the instructions in the README.md</p>
+      </div>
+      <Lists>
+        {/* <ListA /> */}
+        <ListB />
+      </Lists>
+    </div>
+  );
 }

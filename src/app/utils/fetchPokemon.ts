@@ -30,4 +30,3 @@ export async function getPokemon(item: string | number): Promise<Pokemon> {
 		throw error;
 	}
 }
-  
