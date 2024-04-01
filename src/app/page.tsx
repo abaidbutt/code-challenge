@@ -1,7 +1,5 @@
 import ListA from "@/components/ListA";
-import { ReactNode, useState } from "react";
 import ListB from "@/components/ListB";
-import Lists from "@/components/Lists";
 
 export default async function Home() {
   return (
@@ -12,10 +10,24 @@ export default async function Home() {
       <div className="flex gap-2 justify-between items-center">
         <p>Check out the instructions in the README.md</p>
       </div>
-      <Lists>
-        <ListA />
-        <ListB />
-      </Lists>
+      <div className="container w-full grid md:grid-cols-2 sm:grid-cols-1 gap-4">
+        {/* LIst A Component */}
+        <ListA
+          fontFamily="Inter"
+          headerSize="md"
+          paragraphSize="sm"
+          backgroundColor="#f0f0f0"
+          fontColor="#333"
+        />
+        {/* List B component */}
+        <ListB
+          fontFamily="Poppins"
+          headerSize="lg"
+          paragraphSize="md"
+          backgroundColor="#e0e0e0"
+          fontColor="#444"
+        />
+      </div>
     </div>
   );
 }
